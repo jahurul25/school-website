@@ -1,0 +1,14 @@
+{% extends 'pythonbd/base.html' %}
+{% block title %} Index Page {%endblock%}
+
+{% block body %}
+
+
+    <h1> Welcome to my site pythonbd.com </h1>
+
+    {% for d in data %}
+        <h3>{{d}}</h3>
+    {% endfor %}
+
+
+{% endblock %}

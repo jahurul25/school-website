@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Title {% endblock %} </title>
+    {% load staticfiles %}
+</head>
+<body>
+    <div>
+         <ul>
+             <li><a href="/pythonbd/">Home</a></li>
+             <li><a href="/pythonbd/about">about</a></li>
+             <li><a href="/pythonbd/service">service</a></li>
+        </ul>
+    </div>
+
+    <div>
+         {% block body %}
+         {% endblock %}
+    </div>
+</body>
+</html>

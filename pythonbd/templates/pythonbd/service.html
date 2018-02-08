@@ -1,0 +1,14 @@
+{% extends 'pythonbd/base.html' %}
+{% block title %} Service {%endblock%}
+
+{% block body %}
+
+    <h1> Welcome to Service page </h1>
+    <h1> Our Service. </h1>
+
+    {% for d in data %}
+        <h3>{{d}}</h3>
+    {% endfor %}
+
+
+{% endblock %}
